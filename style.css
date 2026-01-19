@@ -1,3 +1,8 @@
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
@@ -132,6 +137,58 @@ nav>h2{
 /* Banner Section End */
 
 
+/* About section start */
+#about{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 50px 200px 120px 200px;
+    background: rgba(26, 11, 46, 1);
+}
+#about .about-container{
+    text-align: center;
+    width: 100%;
+}
+.about-container>h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.75rem;
+    margin-bottom: 16px;
+}
+.about-container>p{
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+hr{
+    margin: 80px 0;
+    border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
+    opacity: 0.1;    
+}
+.frame-content>h3{
+    color:#00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 58px;
+    margin-bottom: 16px;
+}
+.frame-content>p{
+    color:#00ff8883;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+.frame{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* About section end */
+
+
 /* Responsive Design CSS Start */
 
 @media screen and (max-width:576px) {
@@ -150,14 +207,54 @@ nav>h2{
         text-align: center;
     }
     .img1{
-        left: 20%;
-        width: 22rem;
+        left: 29%;
+        top: 15%;
+        width: 15rem;
+    }
+    .img2{
+        top: 38%;
+        left: 50%;
+        width: 6rem;
     }
     .badge {
-        right: 22%;
+        right: 31%;
     }
     .banner-description{
-        left: 12%;
+    left: 3%;
+    text-align: center;
+    }
+    .banner-description>h2{
+    font-weight: 600;
+    font-size: 3rem;
+    }
+    .banner-description>p{
+        font-weight: 400;
+        margin-top: 2px;
+        margin-bottom: 9px;
+    }
+#about{
+    padding: 40px 20px;
+}
+    .frame{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    .about-container>h2{
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 16px;
+    }
+    .about-container>p{
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        display: block;
+    }
+    hr{
+        margin: 20px 0;
     }
 }
 
