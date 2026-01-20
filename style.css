@@ -16,7 +16,6 @@
 .header-container{
     max-width: 1600px;
     height: 92px;
-    /* border: 1px solid blue; */
     margin: 0 auto;
     padding: 30px;
     background: rgba(26, 11, 46, 1);
@@ -64,7 +63,6 @@ nav>h2{
     max-width: 1600px;
     height: 700px;
     margin: 0 auto;
-    /* border: 2px solid peru; */
     background-image: url(./assets/hero-bg.png);
     background-size: cover;
     background-position: center;
@@ -82,6 +80,7 @@ nav>h2{
     left: 39%;
     width: 22rem;
     z-index: 1;
+    transition: transform 5s ;
 }
 .img2{
     position: absolute;
@@ -90,6 +89,10 @@ nav>h2{
     width: 8rem;
     transform: translate(-50%, -50%);
     z-index: 2;
+    transition: transform 5s ;
+}
+.img1:hover{
+    transform: rotate(360deg);
 }
 .badge {
     position: absolute;
@@ -245,6 +248,7 @@ hr{
 /* Why section end */
 
 
+
 /* Features section start */
 
 #features{
@@ -324,6 +328,45 @@ hr{
 }
 
 /* Features section end */
+
+
+/* Footer section start */
+
+#footer{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(./assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.footer-container{
+    padding: 120px;
+    text-align: center;
+}
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 34px;
+}
+.social-container{
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+}
+.footer-container>h2{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.911), blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3.5rem;
+}
+
+/* Footer section end */
+
+
+
 /* Responsive Design CSS Start */
 
 @media screen and (max-width:576px) {
@@ -419,6 +462,30 @@ hr{
 #features{
     width: 100%;
     padding: 40px 20px;
+}
+
+#footer{
+    background-size: cover;
+}
+.footer-container{
+    padding: 40 20px;
+}
+
+.social-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+    align-self: center;
+    gap: 10px;
+}
+.social-icon{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    align-items: center;
+}
+.copyright p{
+    margin-top: 24px;
+    font-size: 1rem;
 }
 }
 
